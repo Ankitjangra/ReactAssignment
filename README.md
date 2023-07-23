@@ -1,3 +1,7 @@
+
+* Added 3rd Party Dummy api -> https://dummyjson.com/products*
+As the given API url for assignment is not working
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
