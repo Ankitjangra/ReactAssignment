@@ -4,9 +4,9 @@ const AllItemsComponent = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch('https://api.example.com/data')
+    fetch('https://dummyjson.com/products')
       .then(response => response.json())
-      .then(data => setData(data))
+      .then(data => setData(data.products))
       .catch(error => console.error('Error fetching data:', error));
   }, []);
 
@@ -16,7 +16,7 @@ const AllItemsComponent = () => {
       <ul>
         {data.map(item => (
           <li key={item.id}>
-            <strong>Name: </strong>{item.name} <br />
+            <strong>Name: </strong>{item.title} <br />
             <strong>Description: </strong>{item.description}
           </li>
         ))}
